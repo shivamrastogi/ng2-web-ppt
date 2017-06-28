@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>web-presentation example</title>
+    <link rel="stylesheet" href="styles.css" charset="utf-8">
+  <link rel="stylesheet" href="transitions.css" media="screen" charset="utf-8">
+    <link rel="import" href="./bower_components/web-presentation/dist/web-presentation.html">
+  </head>
+
+  <body><!-- 
+    
+    <web-presentation>
+      
+      <web-presentation-keyboardcontrols></web-presentation-keyboardcontrols>
+      <web-presentation-progress></web-presentation-progress>
+      
+      <web-slide-title>
+        <h2>Why Angular 2?</h2>
+        
+        <ul>
+          <li data-enter="1">Angular 2 is entirely component based.</li>
+          <li data-enter="2">Controllers and $scope are no longer used. </li>
+          <li data-enter="3">They have been replaced by components and directives.</li>
+          <li data-enter="4"></li>
+          <li data-enter="5"></li>
+        </ul>
+      </web-slide-title>
+      
+      <web-slide>
+        <h1>Native, fast, extendable</h1>
+        <h2>..and only one file to import</h2>
+      </web-slide>
+      
+      <web-slide>
+        <h1>And another slide</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, veritatis.</p>
+      </web-slide>
+      
+    </web-presentation>
+    
+   -->
+     
+      <web-presentation>
+    <web-presentation-progress></web-presentation-progress>
+    <web-presentation-keyboardcontrols></web-presentation-keyboardcontrols>
+
+    <web-slide-title data-transition="moveFromBottom">
+      <h1>Angular 2</h1>
+      <h2>Let's Go!!!!< /h2>
+      <p><small>Press Space to continue</small></p>
+    </web-slide-title>
+
+    <web-slide data-transition="fadeIn">
+      <h1>Why Angular 2?</h1>
+      <h2>Distilled all the best practices of Angular 1.x into
+Angular 2</h2>
+      <h2>By focusing on standards, we get twice the power with
+half the framework </h2>
+      <h2>Angular 2 is entirely component based.</h2>
+      <p><b>web-presentation</b> is a set of webcomponents which let you create html presentations in a natural way. If you know HTML, you know web-presentation.</p>
+      <h2>Controllers and $scope are no longer used. </h2>
+      <p><b>web-presentation</b> is a set of webcomponents which let you create html presentations in a natural way. If you know HTML, you know web-presentation.</p>
+      
+    </web-slide>
+
+    <web-slide data-transition="moveToLeft">
+      <h1>Features</h1>
+      <h2>Fast</h2>
+      <p>Web components are native</p>
+      <h2>No 3rd party dependencies</h2>
+      <p>Written in pure javascript</p>
+      <h2>Extendable and customizable</h2>
+      <p>Thanks to a modular architecture. The keyboard controls for example are not part of the core.</p>
+      <p>You can customize web-presentation tags like you would with any other html tag.</p>
+    </web-slide>
+
+    <web-slide data-transition="moveToLeft">
+      <h1>Fragments</h1>
+      <h2>Step by step</h2>
+      <div>
+        <p>
+          <span data-enter="1">Fragments are a very easy way</span>
+          <span data-enter="2">to display parts</span>
+          <span data-enter="2">of a slide</span>
+          <span data-enter="3">step by step.</span></p>
+          <pre data-enter="4" is="lang-markup" theme="dark">
+&lt;span data-enter="1"&gt;Fragments are a very easy way&lt;span&gt;
+&lt;span data-enter="2"&gt;to display parts&lt;span&gt;
+&lt;span data-enter="2"&gt;of a slide&lt;span&gt;
+&lt;span data-enter="3"&gt;step by step.&lt;span&gt;
+          </pre>
+      </div>
+      
+      <div data-enter="5">
+        <p>..or to hide</p>
+        <pre data-exit="11" is="lang-markup" theme="dark">
+&lt;h1 data-exit="10"&gt;Great!!&lt;h1&gt;
+        </pre>
+      </div>
+    </web-slide>
+
+    <web-slide data-transition="fall">
+      <h1>Getting started</h1>
+      <h2>Link one file and start creating your presentation</h2>
+      <p>To get started just include web-presentation.html in your header.</p>
+      <p>Use the web-presentation and web-slide tags to build your slide.</p>
+      <pre is="lang-markup" theme="dark">
+  &lt;link rel="import" href="web-presentation.html"&gt;
+      </pre>
+    </web-slide>
+
+    <web-slide data-transition="newspaper">
+      <h1>Transitions</h1>
+      <p>
+        web-presentation comes with great transitions out of the box.
+      </p>
+      <h2>Usage</h2>
+      <p>
+        Just set the transition attribute on a slide
+      </p>
+      <pre is="lang-markup" theme="dark">
+  &lt;web-slide data-transition="moveToLeft"&gt;
+      </pre>
+    </web-slide>
+
+    <web-slide>
+      <h1>Let's get started.</h1>
+      <a href="https://github.com/ChristianKohler/web-presentation">https://github.com/ChristianKohler/web-presentation</a>
+    </web-slide>
+
+  </web-presentation>
+
+   </body>
+
+</html>
