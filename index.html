@@ -102,6 +102,42 @@
                 <img src="/images/module.png">
               </web-slide>
 
+              <web-slide data-transition="fall">
+              <h1>Service</h1>
+              <ul>
+                <li> Service is a broad category. It could be anything: a value, a function, or a feature that an application needs. </li>
+                  <li> A service is nothing more than a class in Angular until we decorate it as @Injectable() and register it with an Angular injector. </li>
+                  <li> They are the grounds for dependency injection. </li>
+                  <li> Examples of typical services an app uses could be a logging service, a data access service, a configuration service, etc.  </li>
+                </ul>
+                <img src="/images/module.png">
+              </web-slide>
+
+              <web-slide data-transition="fall">
+              <h1>Injector</h1>
+              <ul>
+                <li> An injector maintains a container of service instances that it has previously created.  </li>
+                  <li> If a requested service instance is not in the container, the injector makes one using a registered provider and adds it to the container before returning the service to Angular. </li>
+                  <li> When all requested services have been resolved and returned, Angular can call the component’s constructor with those services as arguments. This is dependency injection. </li>
+                </ul>
+                <img src="/images/module.png">
+              </web-slide>
+
+              <web-slide data-transition="newspaper">
+              <h1>Directives</h1>
+              <ul>
+                <li> Directives are instructions given to Angular elements to alter their behavior. </li>
+                <li> The most common directive is the @Component declaration, which can be thought of as a directive with a template, meaning it has a clear definition of the elements it will create and manipulate. </li>
+                  <li> There are two other types:
+                    <ul>
+                      <li><b>structural directives:</b> alter a layout by adding, removing or replacing elements. Most common structural directives are *ngFor and *ngIf, which repeat elements or removes them altogether, respectively.</li>
+                      <li><b>Attribute directives:</b> alter the appearance or behavior of an element. Typical attribute directives are ngModel and ngClass, the first binding an element to the model, and the second adds or removes css classes dynamically.</li>
+                    </ul>
+                  </li>
+                </ul>
+                <img src="/images/module.png">
+              </web-slide> 
+
               <web-slide data-transition="newspaper">
                 <h1>Transitions</h1>
                 <p>
