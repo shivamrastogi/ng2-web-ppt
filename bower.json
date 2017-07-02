@@ -1,0 +1,20 @@
+{
+  "name": "ng2-web-ppt",
+  "homepage": "https://github.com/shivamrastogi/ng2-web-ppt",
+  "authors": [
+    "Shivam Rastogi <shivam.ras.92@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "web-presentation": "^1.0.3"
+  }
+}

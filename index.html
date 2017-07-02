@@ -8,134 +8,120 @@
     <link rel="import" href="./bower_components/web-presentation/dist/web-presentation.html">
   </head>
 
-  <body><!-- 
-    
-    <web-presentation>
-      
-      <web-presentation-keyboardcontrols></web-presentation-keyboardcontrols>
-      <web-presentation-progress></web-presentation-progress>
-      
-      <web-slide-title>
-        <h2>Why Angular 2?</h2>
-        
-        <ul>
-          <li data-enter="1">Angular 2 is entirely component based.</li>
-          <li data-enter="2">Controllers and $scope are no longer used. </li>
-          <li data-enter="3">They have been replaced by components and directives.</li>
-          <li data-enter="4"></li>
-          <li data-enter="5"></li>
-        </ul>
-      </web-slide-title>
-      
-      <web-slide>
-        <h1>Native, fast, extendable</h1>
-        <h2>..and only one file to import</h2>
-      </web-slide>
-      
-      <web-slide>
-        <h1>And another slide</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, veritatis.</p>
-      </web-slide>
-      
-    </web-presentation>
-    
-   -->
+  <body>
      
-      <web-presentation>
-    <web-presentation-progress></web-presentation-progress>
-    <web-presentation-keyboardcontrols></web-presentation-keyboardcontrols>
+    <web-presentation>
+      <web-presentation-progress></web-presentation-progress>
+      <web-presentation-keyboardcontrols></web-presentation-keyboardcontrols>
 
-    <web-slide-title data-transition="moveFromBottom">
-      <h1>Angular 2</h1>
-      <h2>Let's Go!!!!</h2>
-      <p><small>Press Space to continue</small></p>
-    </web-slide-title>
+      <web-slide-title data-transition="moveFromBottom">
+        <h1>Angular 2</h1>
+        <h2>Let's Go!!!!</h2>
+        <p><small>Press Space to continue</small></p>
+      </web-slide-title>
 
-    <web-slide data-transition="fadeIn">
-      <h1>Why Angular 2?</h1>
-      
-      <h2>Distilled all the best practices of Angular 1.x into
-Angular 2</h2>
-      <h2>By focusing on standards, we get twice the power with
-half the framework </h2>
-      <h2>Angular 2 is entirely component based.</h2>
-      <p><b>web-presentation</b> is a set of webcomponents which let you create html presentations in a natural way. If you know HTML, you know web-presentation.</p>
-      <h2>Controllers and $scope are no longer used. </h2>
-      <p><b>web-presentation</b> is a set of webcomponents which let you create html presentations in a natural way. If you know HTML, you know web-presentation.</p>
-      
-    </web-slide>
+      <web-slide data-transition="fadeIn">
+        <h1>Why Angular 2?</h1>
 
-    <web-slide data-transition="moveToLeft">
-      <h1>Building Blocks</h1>
-      <h2>Module</h2>
-      <h2>Component</h2>
-      <h2>Metadata</h2>
-      <h2>Template</h2>
-      <h2>Data Binding </h2>
-      <h2>Service</h2>
-      <h2>Directive</h2>
-      <h2>Dependency Injection</h2>
-    </web-slide>
+        <h2>Distilled all the best practices of Angular 1.x into
+          Angular 2</h2>
+          <h2>By focusing on standards, we get twice the power with
+            half the framework </h2>
+            <h2>Angular 2 is entirely component based.</h2>
+            <p><b>web-presentation</b> is a set of webcomponents which let you create html presentations in a natural way. If you know HTML, you know web-presentation.</p>
+            <h2>Controllers and $scope are no longer used. </h2>
+            <p><b>web-presentation</b> is a set of webcomponents which let you create html presentations in a natural way. If you know HTML, you know web-presentation.</p>
 
-    <web-slide data-transition="moveToLeft">
-    <h1>Bootstrapping the App</h1>
-      <div>
-        <h2>Import the bootstrap module</h2>
-        <h2>Import your top-level component </h2>
-        <h2>Import application dependencies </h2>
-        <h2>Call bootstrap and pass in your top-level component as
-  the first parameter and an array of dependencies as the
-  second</h2>
-      </div>      
-    </web-slide>
+          </web-slide>
 
-    <web-slide data-transition="moveToLeft">
-    <h1>Bootstrapping the App</h1>
-      <pre>
-        // The browser platform without a compiler
-          import { platformBrowser } from '@angular/platform-browser';
+          <web-slide data-transition="moveToLeft">
+            <h1>Building Blocks</h1>
+            <div class="" style="float: left">
+              <h3>Bootstrapping The App</h3>
+              <h3>Decorators</h3>
+              <h3>Module</h3>
+              <h3>Component</h3>
+              <h3>Metadata</h3>
+              <h3>Template</h3>
+              <h3>Data Binding </h3>
+            </div>
+            <div>
+              <h3>Service</h3>
+              <h3>Directive</h3>
+              <h3>Dependency Injection</h3>
+            </div>
+          </web-slide>
 
-          // The app module factory produced by the static offline compiler
-          import { AppModuleNgFactory } from './app/app.module.ngfactory';
+          <web-slide data-transition="moveToLeft">
+            <h1>Bootstrapping the App</h1>
+            <div>
+              <h2>Import the bootstrap module</h2>
+              <h2>Import your top-level component </h2>
+              <h2>Import application dependencies </h2>
+              <h2>Call bootstrap and pass in your top-level component as
+                the first parameter and an array of dependencies as the
+                second</h2>
+              </div>      
+            </web-slide>
 
-          // Launch with the app module factory.
-          platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
-      </pre>
-    </web-slide>
-   
+            <web-slide data-transition="moveToLeft">
+              <h1>Bootstrapping the App</h1>
+              <pre>
+                // The browser platform without a compiler
+                import { platformBrowser } from '@angular/platform-browser';
 
-    <web-slide data-transition="fall">
-      <h1>Module</h1>
-      <ul>
-        <li> Uses ES6 module syntax </li>
-        <li> Angular 2 applications use modules as the core
-mechanism for composition </li>
-        <li> Modules export things that other modules can import </li>
-        <li> Keep your modules fine-grained and self-documenting </li>
-      </ul>
-      <img src="/images/module.png">
-    </web-slide>
+                // The app module factory produced by the static offline compiler
+                import { AppModuleNgFactory } from './app/app.module.ngfactory';
 
-    <web-slide data-transition="newspaper">
-      <h1>Transitions</h1>
-      <p>
-        web-presentation comes with great transitions out of the box.
-      </p>
-      <h2>Usage</h2>
-      <p>
-        Just set the transition attribute on a slide
-      </p>
-      <pre is="lang-markup" theme="dark">
-  &lt;web-slide data-transition="moveToLeft"&gt;
-      </pre>
-    </web-slide>
+                // Launch with the app module factory.
+                platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
+              </pre>
+            </web-slide>
+            
+            <web-slide data-transition="newspaper">
+              <h1>Metadata</h1>
+              <ul>
+                <li> Decorators are functions that modify JavaScript classes </li>
+                <li> Angular 2 applications use modules as the core
+                  mechanism for composition </li>
+                  <li> @NgModule, @Component, @Injectable, @Input, @Output. </li>
+                  <li> @NgModule decorator may define imports, exports, providers, definitions, etc, while a @Component decorator will indicate the selector  </li>
+                </ul>
+                <img src="/images/module.png">
+              </web-slide>  
 
-    <web-slide>
-      <h1>Let's get started.</h1>
-      <a href="https://github.com/ChristianKohler/web-presentation">https://github.com/ChristianKohler/web-presentation</a>
-    </web-slide>
+            <web-slide data-transition="fall">
+              <h1>Module</h1>
+              <h3> A module is a class with a decorator (@NgModule) that has the information of : </h3>
+              <ul>
+                <li> Which components, directives and pipes belong to the module (declarations) </li>
+                  <li> Which of those components, directives and pipes are allowed to be used by other modules (exports) </li>
+                  <li> Which other existing modules will be used to accomplish tasks (imports) </li>
+                  <li> Provide services that are going to be used by inner objects. </li>
+                </ul>
+                <img src="/images/module.png">
+              </web-slide>
 
-  </web-presentation>
+              <web-slide data-transition="newspaper">
+                <h1>Transitions</h1>
+                <p>
+                  web-presentation comes with great transitions out of the box.
+                </p>
+                <h2>Usage</h2>
+                <p>
+                  Just set the transition attribute on a slide
+                </p>
+                <pre is="lang-markup" theme="dark">
+                  &lt;web-slide data-transition="moveToLeft"&gt;
+                </pre>
+              </web-slide>
+
+              <web-slide>
+                <h1>Let's get started.</h1>
+                <a href="https://github.com/ChristianKohler/web-presentation">https://github.com/ChristianKohler/web-presentation</a>
+              </web-slide>
+
+            </web-presentation>
 
    </body>
 

@@ -1,0 +1,40 @@
+{
+  "name": "web-presentation",
+  "version": "1.0.3",
+  "homepage": "https://github.com/ChristianKohler/web-presentation",
+  "authors": [
+    "Christian Kohler <kohler.christian@gmail.com>"
+  ],
+  "description": "A presentation framework created with web components",
+  "main": "/dist/web-presentation.html",
+  "keywords": [
+    "html5",
+    "web components",
+    "web-components",
+    "shadow dom",
+    "html templates",
+    "custom elements",
+    "presentation"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "demo",
+    "node_modules",
+    "src",
+    ".gitignore",
+    "bower.json",
+    "gulpfile.js",
+    "package.json",
+    "README.md"
+  ],
+  "_release": "1.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.3",
+    "commit": "a1bf3519a22b5ec2a74c5f4e1cf160d421ac1ab6"
+  },
+  "_source": "https://github.com/ChristianKohler/web-presentation.git",
+  "_target": "^1.0.3",
+  "_originalSource": "web-presentation",
+  "_direct": true
+}
